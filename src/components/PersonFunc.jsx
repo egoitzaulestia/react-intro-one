@@ -1,10 +1,10 @@
 import React from "react";
 
-const PersonFunc = (props) => {
+const PersonFunc = ({ name, surname, age }) => {
   return (
-    <span>
-      {props.name} {props.surname}, {props.age} years old.
-    </span>
+    <h3>
+      <span>{name}</span> <span>{surname}</span>, <span>{age} years old</span>
+    </h3>
   );
 };
 

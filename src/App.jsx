@@ -1,4 +1,6 @@
 import "./App.css";
+import PersonFunc from "./components/PersonFunc";
+
 const people = [
   { name: "Eren", surname: "Yeager", age: 19 },
   { name: "Armin", surname: "Arlert", age: 19 },
@@ -9,7 +11,15 @@ const people = [
 ];
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <div>
+        {people.map((person, index) => {
+          return <PersonFunc key={index} {...person} />;
+        })}
+      </div>
+    </>
+  );
 }
 
 export default App;
