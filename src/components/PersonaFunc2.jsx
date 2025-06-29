@@ -1,6 +1,6 @@
 import React from "react";
 
-const PersonaFunc2 = ({ name }, { surname }, { age }) => {
+const PersonaFunc2 = ({ name, surname, age }) => {
   return (
     <div>
       <span>
