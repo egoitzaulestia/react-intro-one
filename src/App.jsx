@@ -57,9 +57,8 @@ function App() {
         <h2>Class Component 2</h2>
         <ul>
           {names.map((name, index) => (
-            <li>
+            <li key={index}>
               <PersonClass2
-                key={index}
                 name={name}
                 surname={surnames[index]}
                 age={ages[index]}
