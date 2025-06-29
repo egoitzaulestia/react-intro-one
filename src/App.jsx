@@ -1,6 +1,7 @@
 import "./App.css";
 import PersonaFunc2 from "./components/PersonaFunc2";
 import PersonClass from "./components/PersonClass";
+import PersonClass2 from "./components/PersonClass2";
 import PersonFunc from "./components/PersonFunc";
 
 const names = ["Eren", "Armin", "Mikasa", "Reiner", "Levi", "Annie"];
@@ -50,6 +51,22 @@ function App() {
             age={ages[index]}
           />
         ))}
+        <br />
+        <hr />
+
+        <h2>Class Component 2</h2>
+        <ul>
+          {names.map((name, index) => (
+            <li>
+              <PersonClass2
+                key={index}
+                name={name}
+                surname={surnames[index]}
+                age={ages[index]}
+              />
+            </li>
+          ))}
+        </ul>
       </div>
     </>
   );
